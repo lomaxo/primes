@@ -8,7 +8,7 @@ fn usage() {
 
 fn main() {
     let mut arguments = args().skip(1);
-    //let max_prime: usize = arguments[0].parse().unwrap();
+    //let max_prime:  usize = arguments[0].parse().unwrap();
     let max_prime: usize = match arguments.next() {
         Some(i) => { i.parse().unwrap() },
         None => {
